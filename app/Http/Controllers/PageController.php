@@ -120,18 +120,5 @@ class PageController extends Controller
             return redirect("/user")->with("alert", "Password Lama Salah");
         }
     }
-    
-    // public function updateuser(Request $request){
-    //     $user = Auth::user();
-    //     $lastpass = $user->password;
-    //     if ($request->password_baru == $request->konfirmasi_password_baru && $request->password_lama) {
-    //         $user->password = bcrypt($request->password_baru);
-    //         $user->save();
-    //         // return $user->password; //<-melihat api
-    //         return redirect("/user")->with("alert","Password Berhasi Diubah");
-    //     } else {
-    //         return redirect("/user")->with("alert","Password Gagal Diubah");
-    //     }
-    // }
 
 }
